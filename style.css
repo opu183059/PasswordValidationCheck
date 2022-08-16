@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #8cccff;
+}
+.box{
+    position: relative;
+    width: 300px;
+}
+.box h1{
+    color: rgb(16, 82, 56);
+    font-size: 25px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+}
+.box .inputBox{
+    position: relative;
+    width: 100%;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+.box .inputBox input{
+    position: relative;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px 5px;
+}
+.box .inputBox #toggleBtn{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    background: rgb(194, 194, 194);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .inputBox #toggleBtn::before{
+    content: '\f06e';
+    font-family: fontAwesome;
+}
+.box .inputBox #toggleBtn.hide::before{
+    content: '\f070';
+    /* font-family: fontAwesome; */
+}
+
+.validation{
+    background: rgb(16, 82, 56);
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+.validation ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.validation ul li{
+    position: relative;
+    list-style: none;
+    color: white;
+    font-size: 0.85rem;
+    transition: 0.5s;
+}
+.validation ul li.valid{
+    color: rgb(255, 255, 255, 0.5);
+}
+.validation ul li::before{
+    content: '\f192';
+    font-family: 'fontAwesome';
+    width: 20px;
+    height: 10px;
+    display: inline-block;
+}
+
+.validation ul li.valid::before{
+    content: '\f00c';
+
+    /* content: '\f192';
+    font-family: 'fontAwesome'; */
+    color: rgb(0, 223, 0);
+}
+.coppyright{
+    font-size: 15px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+}
